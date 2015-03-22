@@ -6,9 +6,9 @@ It is a bot for the Planet Wars-like game.
 
 The bot named "al-baghdadi" after the notorious leader of the Islamic State of Iraq and the Levant (ISIL).
 
-Competition details (in Russian): http://machinezone.ru/archives/141
+Competition announcement (in Russian): http://machinezone.ru/archives/141
 
-Starter pack: https://github.com/ai-challenge-mz/getting-started
+Problem details and starter pack (also in Russian): https://github.com/ai-challenge-mz/getting-started
 
 ### How do I build and start a bot instance? ###
 
