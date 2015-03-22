@@ -189,9 +189,9 @@ class Bot(
     val state = currentPlanetsState(planetId)
     val info = map.planetsInfo(planetId)
     val myPlanets = getMyPlanetsState.keySet
-    val Some(minDistanceToMyPlanet) = info.distances.collectFirst {
+    val minDistanceToMyPlanet = info.distances.collectFirst {
       case (anotherPlanet, distance) if myPlanets(anotherPlanet) => distance
-    }
+    }.getOrElse(Int.MaxValue)
     state.production.toDouble / state.fleetSize / minDistanceToMyPlanet
   }
 
