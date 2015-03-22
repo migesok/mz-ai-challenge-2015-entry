@@ -10,6 +10,8 @@ Competition announcement (in Russian): http://machinezone.ru/archives/141
 
 Problem details and starter pack (also in Russian): https://github.com/ai-challenge-mz/getting-started
 
+Unfortunately a couple of bugs splipped into my submission. I fixed them after the contest in the `master` branch. One can get the submitted version of the bot by checking out `submitted-version` tag.
+
 ### How do I build and start a bot instance? ###
 
 * Install SBT: http://www.scala-sbt.org/0.13/tutorial/Setup.html
