@@ -90,7 +90,8 @@ class Bot(
 
   private[this] def impossibleCurrentTurnOrders = for {
     o@ScheduledFleetOrder(from, to, fleetSize, 0) <- scheduledFleetOrders
-    if currentPlanetsState(from).fleetSize < fleetSize
+    fromPlanetState = currentPlanetsState(from)
+    if fromPlanetState.fleetSize < fleetSize || fromPlanetState.ownerId != Some(id)
   } yield o
 
   private[this] def unscheduleOrders(orders: Iterable[ScheduledFleetOrder]): Unit = {
