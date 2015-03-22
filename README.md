@@ -14,6 +14,9 @@ Starter pack: https://github.com/ai-challenge-mz/getting-started
 
 * Install SBT: http://www.scala-sbt.org/0.13/tutorial/Setup.html
 * Build a bot's executable JAR-file by invoking from the root project directory:
-  >sbt clean oneJar
+ 
+  sbt clean oneJar
+
 * Run the executable file using Java 7 or 8:
-  >java -jar target/scala-2.11/al-baghdadi_2.11-0.1-one-jar.jar
+  
+  java -jar target/scala-2.11/al-baghdadi_2.11-0.1-one-jar.jar
