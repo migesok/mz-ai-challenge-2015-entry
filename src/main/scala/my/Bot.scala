@@ -57,7 +57,7 @@ class Bot(
     val alreadyTargetedPlanets = ongoingPlanetAttacks.keySet
     val newTargets: Set[PlanetId] = (enemyPlanetsState.keySet ++ neutralPlanetsState.keySet -- alreadyTargetedPlanets)
       .filter(p => currentPlanetsState(p).production >= 0)
-    val prioritizedTargets = newTargets.toList.sortBy(getTargetPlanetPriority)
+    val prioritizedTargets = newTargets.toList.sortBy(getTargetPlanetPriority).reverse
 
     var remainingTargets = prioritizedTargets
     while (remainingTargets.nonEmpty) {
